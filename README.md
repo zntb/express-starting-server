@@ -15,7 +15,7 @@ package.json setup modification in ES Modules:
  "version": "1.0.0",\
  "description": "",\
  "main": "app.js",\
- "type": "module"\ 👈 ❗This should be added❗
+ "type": "module" 👈 ❗This should be added❗\
 "scripts": {\
  "start": "nodemon app.js"\
  },\
