@@ -1,16 +1,17 @@
-require('dotenv').config();
-const colors = require('colors');
+import * as dotenv from 'dotenv';
+dotenv.config();
 
-const express = require('express');
+import express from 'express';
 const app = express();
 
-const morgan = require('morgan');
+import colors from 'colors';
+import morgan from 'morgan';
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello from server!');
 });
 
