@@ -17,11 +17,8 @@ app.get('/', (req, res) => {
 
 const port = process.env.PORT || 5000;
 
-try {
+
   app.listen(port, () => {
     console.log(colors.cyan.underline(`Server listen on PORT ${port}`));
   });
-} catch (error) {
-  console.log(colors.red(error));
-  process.exit(1);
-}
+
